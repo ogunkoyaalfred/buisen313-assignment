@@ -83,33 +83,6 @@ body {
     gap: 15px;
 }
 
-.btn {
-    padding: 12px 22px;
-    border-radius: 100px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.3s ease;
-}
-
-.btn.primary {
-    background: #38bdf8;
-    color: #020617;
-}
-
-.btn.primary:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(56,189,248,0.4);
-}
-
-.btn.ghost {
-    border: 1px solid #38bdf8;
-    color: #38bdf8;
-}
-
-.btn.ghost:hover {
-    background: rgba(56,189,248,0.1);
-}
-
 .card {
     background: rgba(2, 9, 45, 0.75);
     backdrop-filter: blur(12px);
