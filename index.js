@@ -1,4 +1,4 @@
-const text = "Hi there, I'm Ogunkoya Alfred";
+const text = "Hi, I'm Ogunkoya Alfred";
     const typingElement = document.getElementById("typing");
 
     let index = 0;
