@@ -6,7 +6,7 @@
 }
 
 body {
-    background: linear-gradient(135deg, #00020b, #00040c);
+    background: linear-gradient(135deg, #06090a, #0b0f11);
     color: #e5e7eb;
     min-height: 100vh;
     overflow-x: hidden;
@@ -16,14 +16,55 @@ body {
     position: fixed;
     top: -200px;
     left: -200px;
-    width: 500px;
-    height: 500px;
+    width: 480px;
+    height: 480px;
     background: #38bdf8;
-    filter: blur(200px);
-    opacity: 0.25;
+    filter: blur(220px);
+    opacity: 0.18;
     z-index: -1;
 }
 
+/* NAVBAR */
+.navbar {
+    z-index: 100;
+    background: rgba(6, 9, 10, 0.7);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(56, 189, 248, 0.18);
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 14px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #38bdf8;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 0.95rem;
+    color: #cbd5e1;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+/* LAYOUT */
 .wrapper {
     max-width: 1100px;
     margin: auto;
@@ -46,7 +87,7 @@ body {
 }
 
 .hero h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 700;
     margin-bottom: 15px;
 }
@@ -54,7 +95,9 @@ body {
 #typing::after {
     content: '|';
     animation: blink 1s infinite;
+    color: #38bdf8;
 }
+
 @keyframes blink {
     0%, 50% {
         opacity: 0;
@@ -72,24 +115,18 @@ body {
 .hero p {
     max-width: 600px;
     margin: auto;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     color: #94a3b8;
 }
 
-.actions {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
+/* CARDS */
 .card {
-    background: rgba(2, 9, 45, 0.75);
-    backdrop-filter: blur(12px);
+    background: rgba(12, 18, 20, 0.8);
+    backdrop-filter: blur(10px);
     border-radius: 16px;
     padding: 30px;
-    box-shadow: 0 20px 40px rgba(41, 40, 40, 0.3);
-    border: 1px solid rgb(3, 3, 53);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(56, 189, 248, 0.2);
 }
 
 .card h2 {
@@ -99,9 +136,10 @@ body {
 
 .card p {
     line-height: 1.7;
-    color: #cbd5f5;
+    color: #cbd5e1;
 }
 
+/* GRID */
 .grid {
     margin-top: 40px;
     display: grid;
@@ -115,13 +153,14 @@ ul {
 
 li {
     padding: 10px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 li:last-child {
     border-bottom: none;
 }
 
+/* FOOTER */
 footer {
     margin-top: 80px;
     text-align: center;
